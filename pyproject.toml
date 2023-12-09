@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "vk-extract-phones-from-conversations"
+version = "0.1.0"
+description = "Extracts phone numbers from the group conversations"
+authors = ["xdsor <xdsor2100@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+extract-phones = "vk_extract_phones_from_conversations.main:main"
